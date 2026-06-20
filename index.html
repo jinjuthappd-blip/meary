@@ -1,0 +1,67 @@
+/* นำส่วนนี้ไปแทนที่ส่วนเดิมใน <style> */
+.floating {
+    animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+/* Emojis Background Animations */
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(0.8) rotate(0deg); }
+    50% { opacity: 0.8; transform: scale(1.2) rotate(5deg); }
+}
+.animate-twinkle { animation: twinkle 4s ease-in-out infinite; }
+.delay-100 { animation-delay: 1s; }
+.delay-300 { animation-delay: 2s; }
+.delay-700 { animation-delay: 3s; }
+
+.avatar-frame {
+    background-color: #fff0f3;
+    border: 4px solid white;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    position: relative;
+}
+.link-item {
+    display: inline-block;
+    background: #fff0f3;
+    color: var(--text-light);
+    padding: 0.4rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    transition: all 0.2s;
+    text-decoration: none;
+    border: 1px solid #ffdce3;
+}
+.link-item:hover {
+    background: var(--pink-accent);
+    color: white;
+    transform: scale(1.02);
+}
+.contact-btn {
+    background-color: var(--pink-accent);
+    color: white;
+    border-radius: 9999px;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+    border: 2px solid white;
+    text-decoration: none;
+}
+.contact-btn:hover {
+    opacity: 0.8;
+}<a href="https://jeans.cozyw75.workers.dev/" target="_blank" class="link-item">V.1 ยีนส์กระดุม</a>
+<a href="https://www.facebook.com/profile.php?id=61588905549978" target="_blank" class="contact-btn">
+   <svg>...</svg> Facebook
+</a>
+<a href="https://lin.ee/Z3as6Xm" target="_blank" class="contact-btn">
+   <svg>...</svg> Line
+</a>
